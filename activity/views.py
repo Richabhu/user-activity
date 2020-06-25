@@ -48,7 +48,6 @@ class UserTrackingView(viewsets.ModelViewSet):
                 each_user_res['activity_periods'] = activity_res
                 members.append(each_user_res)
         res['members'] = members
-        print(res)
         return Response(res)
 
 
