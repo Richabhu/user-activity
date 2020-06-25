@@ -43,7 +43,7 @@ class UserTrackingView(viewsets.ModelViewSet):
                         _each_user_tracker = dict()
                         _start_time = parser.parse(str(_each_tracker.start_time))
                         _each_user_tracker['start_time'] = _start_time.strftime('%B %d %Y %I:%M %p')
-                        _each_user_tracker['end_time'] = _each_tracker.end_time.strftime('%B %d %Y %I:%M %p')
+                        _each_user_tracker['end_time'] = _each_tracker.end_time #.strftime('%B %d %Y %I:%M %p')
                         activity_res.append(_each_user_tracker)
                 each_user_res['activity_periods'] = activity_res
                 members.append(each_user_res)

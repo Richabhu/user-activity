@@ -8,7 +8,7 @@ from core.models import User
 class UserActivity(models.Model):
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return "{} {} {}".format(self.user, self.start_time, self.end_time)
