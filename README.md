@@ -58,3 +58,7 @@ http://localhost:8000/activity/tracker/detail/
 This is the GET request.
 
 
+You can als view the hosted API by hitting the below mentioned link:
+```
+http://ec2-15-206-125-204.ap-south-1.compute.amazonaws.com/activity/tracker/detail/
+```
